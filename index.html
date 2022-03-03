@@ -15,7 +15,7 @@
 
   <div class="row min-vh-100 no-gutters">
     <header class="col-12 col-lg-3 bg-dark text-light sticky-top d-flex flex-column p-4 p-lg-3">
-      <h1 class="text-center">Taskmaster Pro Edition</h1>
+      <h1 class="text-center"><span class="oi oi-task d-inline d-lg-none"></span>Taskmaster Pro Edition</h1>
       <button id="create-task" class="btn btn-block btn-success" data-toggle="modal" data-target="#task-form-modal">Add
         Task</button>
       <button id="remove-tasks" class="btn btn-block btn-danger">Delete All Tasks</button>
@@ -29,7 +29,7 @@
         <!-- todo start -->
         <div class="col-12 col-md-6 col-xl-3 mb-3">
           <div class="card">
-            <h4 class="card-header bg-dark text-light">
+            <h4 class="card-header bg-dark text-light d-flex align-items-center">
               To Do
             </h4>
             <ul id="list-toDo" class="list-group list-group-flush"></ul>
@@ -39,7 +39,7 @@
         <!-- in progress start -->
         <div class="col-12 col-md-6 col-xl-3 mb-3">
           <div class="card">
-            <h4 class="card-header bg-dark text-light">
+            <h4 class="card-header bg-dark text-light d-flex align-items-center">
               In Progress
             </h4>
             <ul id="list-inProgress" class="list-group list-group-flush"></ul>
@@ -49,7 +49,7 @@
         <!-- in review start -->
         <div class="col-12 col-md-6 col-xl-3 mb-3">
           <div class="card">
-            <h4 class="card-header bg-dark text-light">
+            <h4 class="card-header bg-dark text-light d-flex align-items-center">
               In Review
             </h4>
             <ul id="list-inReview" class="list-group list-group-flush"></ul>
@@ -59,7 +59,7 @@
         <!-- done start -->
         <div class="col-12 col-md-6 col-xl-3 mb-3">
           <div class="card">
-            <h4 class="card-header bg-dark text-light">
+            <h4 class="card-header bg-dark text-light d-flex align-items-center">
               Done
             </h4>
             <ul id="list-done" class="list-group list-group-flush"></ul>
@@ -67,11 +67,11 @@
         </div>
         <!-- done end -->
       </div>
-      <div id="trash" class="mt-auto">
-        <div class="w-100 bg-danger p-3 text-center text-light display-4">
-          Drop Here to Remove.
+      <footer id="trash" class="mt-auto">
+        <div class="w-100 bg-danger p-3 text-center text-light display-4 bottom-trash">
+          <span class="oi oi-trash mx-auto mb-4"></span>Drop Here to Remove.
         </div>
-      </div>
+      </footer>
     </main>
   </div>
 
